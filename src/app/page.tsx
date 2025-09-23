@@ -26,7 +26,7 @@ export default function Home() {
   // Server Actionで商品データを取得
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await getAllProducts();
+      const response = await {/* task2 ここで適切な関数を呼び出す */};
       if (response.data) {
         console.log(response)
         setMockProducts(response.data);

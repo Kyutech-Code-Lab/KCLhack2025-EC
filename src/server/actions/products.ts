@@ -1,4 +1,11 @@
-"use server";
+/*
+  このファイルはサーバーで実行する関数を定義しています
+  
+  getAllProducts関数: すべての商品情報を取得します
+  getProductById関数: 指定したIDの商品情報を取得します
+*/
+
+// task1 ここに記述
 
 import { promises as fs } from "fs";
 import path from "path";
