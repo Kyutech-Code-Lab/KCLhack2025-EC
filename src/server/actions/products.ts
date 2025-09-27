@@ -3,15 +3,18 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { Product, DatabaseResponse, SingleDatabaseResponse } from "../types";
+import { createClient } from "@/lib/supabase/server";
 
 // 全商品を取得するServer Action
 export async function getAllProducts(): Promise<DatabaseResponse<Product>> {
   try {
     
-    // products.jsonに書いてある商品データを取得
-    const jsonPath = path.join(process.cwd(), "src", "server", "data", "products.json");
-    const fileContents = await fs.readFile(jsonPath, "utf8");
-    const products: Product[] = JSON.parse(fileContents);
+    // DBから商品データを取得
+    const supabase = await createClient();
+    const { data: products, error } = await supabase
+      .from('products')
+      .select('*')
+      .order('id', { ascending: true });
 
     // 全商品のデータを返す
     return {
@@ -44,11 +47,13 @@ export async function getAllProducts(): Promise<DatabaseResponse<Product>> {
 export async function getProductById(id: number): Promise<SingleDatabaseResponse<Product>> {
   try {
 
-    // products.jsonに書いてある商品データを取得
-    const jsonPath = path.join(process.cwd(), "src", "server", "data", "products.json");
-    const fileContents = await fs.readFile(jsonPath, "utf8");
-    const allProducts: Product[] = JSON.parse(fileContents);
-    const product = allProducts.find(p => p.id === id) || null;
+    // DBから商品データを取得
+    const supabase = await createClient();
+    const { data: product, error } = await supabase
+      .from('products')
+      .select('*')
+      .eq('id', id)
+      .single();
 
     // 指定された商品データを返す
     return {
