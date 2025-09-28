@@ -1,14 +1,3 @@
-/**
- * 再利用可能なButtonコンポーネント
- * 
- * このコンポーネントの学習ポイント：
- * 1. TypeScriptの型定義（interface）
- * 2. propsの使い方
- * 3. 条件分岐によるスタイル変更
- * 4. デフォルト値の設定
- * 5. Client Componentの宣言
- */
-
 'use client'; // クライアントコンポーネントとして指定（イベントハンドラーを使うため）
 
 import styles from './index.module.css';

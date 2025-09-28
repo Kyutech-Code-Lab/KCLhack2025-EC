@@ -1,14 +1,3 @@
-/**
- * 商品詳細ページ - Dynamic Routes（動的ルーティング）の例
- * 
- * このページの学習ポイント：
- * 1. Next.js App RouterのDynamic Routes
- * 2. paramsの使い方
- * 3. 条件付きレンダリング
- * 4. Stateの管理（useState）
- * 5. コンポーネントの再利用
- */
-
 'use client'; // クライアントコンポーネントとして指定（useStateを使うため）
 
 import { useState, use, useEffect } from 'react';

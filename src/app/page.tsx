@@ -1,14 +1,3 @@
-/**
- * ホームページ（商品一覧）
- *
- * このページの学習ポイント：
- * 1. Next.js Link コンポーネントの使い方
- * 2. 配列のmapメソッドでのリスト表示
- * 3. CSS Modulesの使用方法
- * 4. レスポンシブデザインの実装
- * 5. Client Componentの必要性
- */
-
 "use client"; // クライアントコンポーネントとして指定（イベントハンドラーを使うため）
 
 import { useState, useEffect } from "react"; // React hooks

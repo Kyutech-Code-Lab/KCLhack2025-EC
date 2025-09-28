@@ -1,13 +1,3 @@
-/**
- * 再利用可能なCardコンポーネント
- * 
- * このコンポーネントの学習ポイント：
- * 1. children propsの活用
- * 2. 条件付きレンダリング
- * 3. CSS Modulesの使用
- * 4. オプションのpropsの使い方
- */
-
 import styles from './index.module.css';
 
 interface CardProps {
