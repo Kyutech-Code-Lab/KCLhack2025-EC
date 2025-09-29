@@ -1,0 +1,11 @@
+id,name,description,price,category,stock,image_url
+1,ワイヤレスヘッドフォン,高音質なワイヤレスヘッドフォンです。ノイズキャンセリング機能付きで、長時間の使用でも疲れにくい設計になっています。,12800,家電,15,https://example.com/images/headphones.jpg
+2,スマートウォッチ,健康管理機能が充実したスマートウォッチ。心拍数測定、歩数計、睡眠監視など多彩な機能を搭載しています。,25000,家電,8,https://example.com/images/smartwatch.jpg
+3,デザインTシャツ,シンプルで洗練されたデザインのTシャツです。高品質なコットン素材を使用し、着心地が良く耐久性に優れています。,3200,ファッション,25,https://example.com/images/tshirt.jpg
+4,プログラミング入門書,初心者にも分かりやすく解説されたプログラミング入門書です。基礎から応用まで幅広くカバーしています。,2800,本・雑誌,12,https://example.com/images/programming-book.jpg
+5,コーヒーメーカー,本格的なコーヒーが楽しめる全自動コーヒーメーカーです。豆の挽きから抽出まで一度に行えます。,8500,家電,7,https://example.com/images/coffee-maker.jpg
+6,ランニングシューズ,軽量で通気性に優れたランニングシューズです。クッション性が高く、長距離走行にも適しています。,12000,スポーツ,18,https://example.com/images/running-shoes.jpg
+7,ワイヤレスマウス,精密な動作を実現するワイヤレスマウスです。エルゴノミクスデザインで長時間の作業でも疲れにくいです。,4200,家電,30,https://example.com/images/wireless-mouse.jpg
+8,料理本,家庭で簡単に作れる美味しい料理のレシピが豊富に掲載された料理本です。初心者でも分かりやすい解説付きです。,1800,本・雑誌,20,https://example.com/images/recipe-book.jpg
+9,ノートパソコン,高性能なプロセッサを搭載した軽量ノートパソコンです。ビジネスからクリエイティブワークまで幅広く対応します。,89800,家電,5,https://example.com/images/laptop.jpg
+10,Bluetoothスピーカー,コンパクトながら迫力のあるサウンドを楽しめるBluetoothスピーカーです。防水機能付きでアウトドアでも使用可能です。,6800,家電,22,https://example.com/images/bluetooth-speaker.jpg
